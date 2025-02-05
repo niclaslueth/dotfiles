@@ -5,15 +5,16 @@ cd "$(dirname "${BASH_SOURCE}")";
 git pull origin master;
 
 function doIt() {
-    source ./_install/brew.sh;
 
     read -p "Are you on MAC? (y/n) " -n 1;
     echo "";
     if [[ $REPLY =~ ^[Yy]$ ]]; then
-        IS_MAC=true;
+        export IS_MAC=true;
     else
-        IS_MAC=false;
+        export IS_MAC=false;
     fi;
+    
+    source ./_install/brew.sh;
 
     if [[ "$IS_MAC" == true ]]; then
         read -p "Would you like to put on my Mac Dock (y/n) " -n 1;
