@@ -2,6 +2,6 @@
 
 echo -e "Install git...."
 
-stow git;
+stow git -t ~;
 
 echo -e "Install git done!"

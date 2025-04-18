@@ -3,7 +3,7 @@
 echo -e "Install zsh...."
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-stow zsh;
+stow zsh -t ~;
 
 
 if [[ "$IS_MAC" == true ]]; then

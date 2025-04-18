@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 
 # Install command-line tools using Homebrew.
-which -s brew
-if [[ $? != 0 ]] ; then
+if ! command -v brew >/dev/null 2>&1 ; then
     # Install Homebrew
     NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     # Add Brew to PATH
@@ -11,8 +10,7 @@ if [[ $? != 0 ]] ; then
     eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 fi
 
-which -s stow
-if [[ $? != 0 ]] ; then
+if ! command -v stow >/dev/null 2>&1 ; then
     # Install GNU Stow
     echo "Installing GNU Stow..."
     brew install stow;
@@ -20,5 +18,5 @@ fi
 
 # Install Homebrew Bundle
 echo "Installing Homebrew Bundle..."
-stow brew;
+stow brew -t ~;
 brew bundle install --file=~/Brewfile;

@@ -2,6 +2,6 @@
 
 echo -e "Install Mackup...."
 
-stow mackup;
+stow mackup -t ~;
 
 echo -e "Install Mackup done!"
