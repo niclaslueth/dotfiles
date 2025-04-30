@@ -1,15 +1,4 @@
-# Nico's dotfiles
-
-![macOS.png](docs/macOS.png)
-
-Welcome to my world. This is an advanced developed macOS setup.
-
-This setup works perfectly for JavaScript developers and Software
-Architects who works with macOS.
-
-If this particular setup doesn't work for you, please feel free to
-borrow some ideas from it. Pull requests, comments, requests and any
-other contributions are welcome.
+# Niclas's dotfiles
 
 
 ## Contents
@@ -46,7 +35,7 @@ Use at your own risk!
 You can install the repository by executing the command in terminal:
 
 ```bash
-sh -c "`curl -fsSL https://raw.githubusercontent.com/snics/dotfiles/master/pre-install.sh`"
+sh -c "`curl -fsSL https://raw.githubusercontent.com/niclaslueth/dotfiles/master/pre-install.sh`"
 ```
 
 To run the install wizards please run the command in console:
@@ -56,7 +45,7 @@ sh ~/.dotfiles/install.sh
 ```
 
 ## Update Installation modules
-An update installation Apps and modules is thankfully simple I have created an alias for it with which you can update everything. You just have to enter `update in terminal and everything will be updated``
+An update installation Apps and modules is thankfully simple I have created an alias for it with which you can update everything. You just have to enter `update` in terminal and everything will be updated``
 
 ## Vim and NeoVim Setup
 ![terminal.gif](docs/terminal.gif)
@@ -137,17 +126,6 @@ cp -f ~/.dotfiles/.secrets.example ~/.secrets
 - [ ] Add settings for Github Cloud IDEA.
 - [ ] Add full list of Mac Apps.
 - [ ] Add full list of all Vim and NeoVim shortcut.
-
-## Feedback
-
-Suggestions/improvements
-[welcome](https://github.com/snics/dotfiles/issues)!
-
-## Author
-
-| [![twitter/NicoSwiatecki](http://gravatar.com/avatar/23a38342df4d30085f1bbe71058cc89b?s=70)](http://twitter.com/NicoSwiatecki "Follow @NicoSwiatecki on Twitter") |
-|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-| [Nico Swiatecki](https://swiatecki.io/)                                                                                                                           |
 
 ## Thanks to…
 
